@@ -43,6 +43,7 @@ dev = [
   { include-group = "test" },
   { include-group = "lint" },
   { include-group = "docs" },
+  { include-group = "browser" },
 ]
 test = ["pytest>=8"]
 browser = [

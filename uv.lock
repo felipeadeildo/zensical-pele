@@ -621,6 +621,7 @@ browser = [
     { name = "zensical" },
 ]
 dev = [
+    { name = "playwright" },
     { name = "pytest" },
     { name = "ruff" },
     { name = "ty" },
@@ -653,6 +654,7 @@ browser = [
     { name = "zensical", specifier = ">=0.1" },
 ]
 dev = [
+    { name = "playwright", specifier = ">=1.50" },
     { name = "pytest", specifier = ">=8" },
     { name = "ruff", specifier = ">=0.14" },
     { name = "ty", specifier = ">=0.0.1a20" },

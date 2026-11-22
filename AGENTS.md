@@ -11,7 +11,7 @@ uv sync
 uv run pytest
 uv run ruff format && uv run ruff check
 uv run ty check
-uv run --group browser pytest -m browser
+uv run pytest -m browser
 uv run zensical build --clean --strict
 uv run scripts/sync_pele_examples.py
 ```

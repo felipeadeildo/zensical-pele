@@ -53,8 +53,8 @@ uv run zensical serve
 The browser tests build the docs and check every diagram in Chromium:
 
 ```sh
-uv run --group browser playwright install chromium
-uv run --group browser pytest -m browser
+uv run playwright install chromium
+uv run pytest -m browser
 ```
 
 The gallery in `docs/examples/` is generated from https://pele.run/examples.
