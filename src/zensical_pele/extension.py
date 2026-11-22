@@ -102,8 +102,11 @@ class DiagramFence:
             f'{html.escape(name)}="{html.escape(value)}"'
             for name, value in (attrs or {}).items()
         )
+        # A code block inside the element keeps the source readable without
+        # JavaScript, and Zensical's llms.txt turns it into a mermaid block.
         source = html.escape(src, quote=False)
-        return f"<div {' '.join(attributes)}>{source}</div>"
+        code_block = f'<pre><code class="language-mermaid">{source}</code></pre>'
+        return f"<div {' '.join(attributes)}>{code_block}</div>"
 
     def superfences_entry(self, name: str) -> dict[str, Any]:
         """Describe the fence the way SuperFences stores its custom fences."""

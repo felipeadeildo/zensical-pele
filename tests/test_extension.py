@@ -47,6 +47,15 @@ def test_escapes_diagram_source():
     assert "A[&lt;b&gt;Start&lt;/b&gt;] --&gt; B" in html
 
 
+@pytest.mark.parametrize("fence", ["mermaid", "pele"])
+def test_wraps_source_in_a_mermaid_code_block(fence):
+    html = render(f"```{fence}\ngraph LR\n  A --> B\n```\n", fences=[fence])
+    assert (
+        '<div class="pele-diagram" data-pele-diagram>'
+        '<pre><code class="language-mermaid">graph LR\n  A --&gt; B</code></pre></div>'
+    ) in html
+
+
 def test_adds_page_assets_once_per_page():
     html = render(FLOWCHART + "\n" + FLOWCHART)
     assert html.count('<script type="module">') == 1

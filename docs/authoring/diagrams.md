@@ -44,7 +44,7 @@ browser console has the error, with a `[zensical-pele]` prefix. Check that the
 page can reach jsDelivr, or the URL you set in
 [`module_url`](../setup/loading-pele.md#module_url).
 
-When the source shows as plain text and the element has no `data-pele-state`
+When the source shows as a code block and the element has no `data-pele-state`
 at all, the page's script didn't run. Check that JavaScript is enabled and that
 the block is a ` ```mermaid ` block, or a language in
 [`fences`](../setup/fences.md#fences).

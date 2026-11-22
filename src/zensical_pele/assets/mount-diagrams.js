@@ -28,9 +28,10 @@ if (elements.length > 0) {
 }
 
 async function mountDiagram(element, mount) {
-  const source = element.textContent ?? "";
+  const fallback = [...element.childNodes];
+  const source = element.querySelector("code")?.textContent ?? "";
   try {
-    element.textContent = "";
+    element.replaceChildren();
     const diagram = await mount(element, source, {
       onError: (error) => console.warn("[zensical-pele]", error),
       ...mountOptions,
@@ -38,7 +39,7 @@ async function mountDiagram(element, mount) {
     element.dataset.peleState = "mounted";
     registry.mounted.push({ element, diagram });
   } catch (error) {
-    element.textContent = source;
+    element.replaceChildren(...fallback);
     element.dataset.peleState = "failed";
     console.error("[zensical-pele]", error);
   }

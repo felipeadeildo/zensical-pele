@@ -29,12 +29,18 @@ converted, zensical-pele adds a `mermaid` fence to the end of that list.
 SuperFences checks the list from the end, so this fence wins over the
 `mermaid` fence that Zensical configures by default.
 
-The fence writes the source into a `<div>`, escaped like any other text:
+The fence writes the source as a `mermaid` code block inside a `<div>`:
 
 ```html
-<div class="pele-diagram" data-pele-diagram>flowchart LR
-  Cart --&gt; Payment --&gt; Done</div>
+<div class="pele-diagram" data-pele-diagram><pre><code class="language-mermaid">flowchart LR
+  Cart --&gt; Payment --&gt; Done</code></pre></div>
 ```
+
+The code block is there for whatever reads the page without running the
+script. Readers without JavaScript see a regular code block, and the Zensical
+`llmstxt` plugin turns it into a ` ```mermaid ` block in the
+[Markdown copy of the page](../setup/llms-txt.md). Zensical loads Mermaid.js
+only for `pre.mermaid` elements, so this markup doesn't load it.
 
 Once the whole page is converted, zensical-pele looks for the
 `data-pele-diagram` attribute. If it finds one, it appends a `<style>` element
@@ -59,7 +65,8 @@ The script imports Pele's lazy entry point from jsDelivr, or from
 diagram types on the page and skips the others, so the checkout page above
 never downloads the code for Gantt charts or mind maps.
 
-For each element, the script reads the source, clears the element and calls
+For each element, the script reads the source from the code block, clears the
+element and calls
 Pele's `mountAsync()`. Pele measures the element's width, draws the SVG, and
 draws it again when the width changes. The element's `data-pele-state` moves
 through these states:
@@ -84,7 +91,8 @@ the first import.
 
 ## What this design costs
 
-- Readers need JavaScript. Without it, they see the diagram source as text.
+- Readers need JavaScript. Without it, they see the diagram source as a code
+  block.
 - Pele lays out diagrams its own way, so they look different from Mermaid.js.
   The [Pele compatibility notes](https://pele.run/compatibility) list the
   differences.

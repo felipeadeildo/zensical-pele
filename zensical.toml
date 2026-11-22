@@ -131,7 +131,6 @@ alternate_style = true
 [project.plugins.llmstxt]
 markdown_description = "zensical-pele is a Python Markdown extension, named `pele`, that renders Mermaid diagrams with Pele in Zensical and MkDocs. Diagrams appear below as mermaid code blocks."
 full_output = "llms-full.txt"
-preprocess = "llmstxt.py"
 
 [project.plugins.llmstxt.sections]
 "Get started" = ["index.md", "get-started/index.md", "get-started/migrate.md"]

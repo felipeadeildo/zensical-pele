@@ -3,10 +3,6 @@
   margin: 1em 0;
 }
 
-.pele-diagram:not([data-pele-state="mounted"]) {
-  overflow-x: auto;
-  font-family: var(--md-code-font-family, monospace);
-  font-size: 0.85em;
-  white-space: pre;
+.pele-diagram[data-pele-state="loading"] {
   opacity: 0.6;
 }

@@ -38,5 +38,5 @@ An invalid value stops the build with a message that names the option.
 | `fences`        | `["mermaid"]`    | Code block languages rendered with Pele        | [Fences](fences.md#fences)                  |
 | `class_name`    | `"pele-diagram"` | CSS class of the element that holds a diagram  | [Fences](fences.md#class_name)              |
 
-[llms.txt](llms-txt.md) has no option on the extension: it sets up a hook of
-the Zensical `llmstxt` plugin.
+[llms.txt](llms-txt.md) needs no option: diagrams come out as `mermaid` blocks
+once the Zensical `llmstxt` plugin is enabled.

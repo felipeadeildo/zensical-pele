@@ -3,7 +3,7 @@
 zensical-pele is a Python Markdown extension, registered as `pele`, with the
 module `zensical_pele`. It renders `mermaid` fences as elements that Pele
 mounts in the browser. The docs in `docs/` are a Zensical site that uses the
-extension, and `llmstxt.py` is the site's llms.txt hook.
+extension and publishes llms.txt.
 
 ## Commands
 
