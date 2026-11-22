@@ -150,3 +150,16 @@ def test_llms_index_lists_every_page_in_the_nav(site_url: str):
         url_path = page.with_suffix("").as_posix().removesuffix("index").rstrip("/")
         url_path = f"{url_path}/index.md" if url_path else "index.md"
         assert f"zensical-pele/{url_path}>" in index, url_path
+
+
+def test_unreachable_pele_leaves_the_source_as_a_code_block(page: Page, site_url: str):
+    page.route("**/cdn.jsdelivr.net/**", lambda route: route.abort())
+    page.goto(site_url)
+    page.wait_for_function(
+        """() => [...document.querySelectorAll("[data-pele-diagram]")]
+          .every((element) => element.dataset.peleState === "failed")""",
+        timeout=MOUNT_TIMEOUT_MS,
+    )
+    source = page.text_content("[data-pele-diagram] code.language-mermaid")
+    assert source is not None
+    assert source.startswith("flowchart LR")

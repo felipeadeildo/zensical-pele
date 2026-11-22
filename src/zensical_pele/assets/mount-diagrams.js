@@ -21,10 +21,14 @@ const elements = [...document.querySelectorAll(diagramSelector)].filter(
 if (elements.length > 0) {
   for (const element of elements) element.dataset.peleState = "loading";
 
-  const pele = await import(peleUrl);
-  const mount = pele.mountAsync ?? pele.mount;
-
-  await Promise.all(elements.map((element) => mountDiagram(element, mount)));
+  try {
+    const pele = await import(peleUrl);
+    const mount = pele.mountAsync ?? pele.mount;
+    await Promise.all(elements.map((element) => mountDiagram(element, mount)));
+  } catch (error) {
+    for (const element of elements) element.dataset.peleState = "failed";
+    console.error("[zensical-pele] Could not load Pele from", peleUrl, error);
+  }
 }
 
 async function mountDiagram(element, mount) {
