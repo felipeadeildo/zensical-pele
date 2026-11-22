@@ -23,7 +23,7 @@ uv add zensical-pele
 ```
 
 ```toml
-[project.markdown_extensions.zensical_pele]
+[project.markdown_extensions.pele]
 ```
 
 With MkDocs, list it in `mkdocs.yml` after `pymdownx.superfences`:
@@ -31,12 +31,13 @@ With MkDocs, list it in `mkdocs.yml` after `pymdownx.superfences`:
 ```yaml
 markdown_extensions:
   - pymdownx.superfences
-  - zensical_pele
+  - pele
 ```
 
-The [configuration page](https://felipeadeildo.github.io/zensical-pele/configuration/)
-covers pinning the Pele version, serving Pele from your own site and passing
-options to Pele.
+The [Setup](https://felipeadeildo.github.io/zensical-pele/setup/) pages cover
+pinning the Pele version, serving Pele from your own site, colors, and
+[llms.txt](https://felipeadeildo.github.io/zensical-pele/setup/llms-txt/) with
+diagrams as `mermaid` blocks.
 
 ## Development
 

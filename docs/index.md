@@ -1,6 +1,7 @@
 ---
 title: zensical-pele
 description: Render Mermaid diagrams with Pele in Zensical and MkDocs.
+icon: lucide/house
 ---
 
 # zensical-pele
@@ -22,23 +23,48 @@ Pele drew the diagram above, and every other diagram on this site. Switch the
 color scheme in the header: the diagram changes colors without being drawn
 again.
 
-## Try it on your site
-
-If you build your site with Zensical, run it once with the extension, without
-changing your project:
-
 ```sh
 uvx --with zensical-pele zensical serve
 ```
 
-Then enable it in `zensical.toml`:
+That command runs your site once with the extension installed. To keep it,
+add `[project.markdown_extensions.pele]` to `zensical.toml`.
 
-```toml
-[project.markdown_extensions.zensical_pele]
-```
+<div class="grid cards" markdown>
 
-[Getting started](getting-started.md) covers installation, MkDocs and how to
-check that diagrams render.
+-   :lucide-rocket:{ .lg .middle } **Get started**
+
+    ---
+
+    Install the extension, enable it and render a first diagram.
+
+    [:lucide-arrow-right: Get started](get-started/index.md)
+
+-   :lucide-settings-2:{ .lg .middle } **Setup**
+
+    ---
+
+    Pin the Pele version, host Pele yourself, change colors and zoom.
+
+    [:lucide-arrow-right: Setup](setup/index.md)
+
+-   :lucide-layout-grid:{ .lg .middle } **Gallery**
+
+    ---
+
+    All 32 diagram types, each with the Markdown that produced it.
+
+    [:lucide-arrow-right: Gallery](examples/index.md)
+
+-   :lucide-bot:{ .lg .middle } **llms.txt**
+
+    ---
+
+    Give coding agents your docs with diagrams as `mermaid` blocks.
+
+    [:lucide-arrow-right: llms.txt](setup/llms-txt.md)
+
+</div>
 
 ## Why Pele
 
@@ -57,20 +83,9 @@ compares it with Mermaid.js:
 
 The CSS variables are what make the theme work. zensical-pele points Pele's
 color and font variables at the variables of the Zensical theme, so a diagram
-in dark mode uses the dark palette with no extra configuration. The
-[Theming](theming.md) page lists the mapping and how to change it.
+in dark mode uses the dark palette with no extra configuration.
+[Colors and fonts](setup/colors-and-fonts.md) lists the mapping.
 
 Small screens get a different layout, not a smaller picture. Below 640 pixels,
 Pele can turn a wide left-to-right flowchart into a top-to-bottom one, and
 readers can zoom and pan a diagram that still doesn't fit.
-
-## What to read next
-
-- [Getting started](getting-started.md): install the extension and render a
-  first diagram.
-- [Configuration](configuration.md): pin the Pele version, host Pele yourself,
-  pass options to Pele.
-- [Gallery](examples/index.md): every diagram type, with the Markdown that
-  produced it.
-- [How it works](how-it-works.md): what happens at build time and in the
-  browser.

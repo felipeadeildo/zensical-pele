@@ -1,6 +1,6 @@
 """Build the docs and check that Pele renders them in Chromium.
 
-Run with ``uv run --group browser pytest -m browser``. Needs network access to
+Run with ``uv run pytest -m browser``. Needs network access to
 load Pele from jsDelivr, and a Playwright browser: ``playwright install chromium``.
 """
 
@@ -130,6 +130,23 @@ def test_color_scheme_switch_keeps_the_svg(page: Page, site_url: str):
 def test_page_without_diagrams_does_not_load_pele(page: Page, site_url: str):
     requests: list[str] = []
     page.on("request", lambda request: requests.append(request.url))
-    page.goto(f"{site_url}theming/")
+    page.goto(f"{site_url}setup/fences/")
     page.wait_for_load_state("networkidle")
     assert not [url for url in requests if "pele" in url and "jsdelivr" in url]
+
+
+def test_llms_markdown_keeps_diagrams_as_mermaid_blocks(site_url: str):
+    del site_url
+    markdown = (SITE_DIR / "examples" / "pie" / "index.md").read_text()
+    assert "```mermaid\npie title Fish caught by the crew\n" in markdown
+    assert 'Fish caught by the crew "' not in markdown
+
+
+def test_llms_index_lists_every_page_in_the_nav(site_url: str):
+    del site_url
+    index = (SITE_DIR / "llms.txt").read_text()
+    pages = [page.relative_to(ROOT / "docs") for page in (ROOT / "docs").rglob("*.md")]
+    for page in pages:
+        url_path = page.with_suffix("").as_posix().removesuffix("index").rstrip("/")
+        url_path = f"{url_path}/index.md" if url_path else "index.md"
+        assert f"zensical-pele/{url_path}>" in index, url_path
