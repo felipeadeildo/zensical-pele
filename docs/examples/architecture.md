@@ -9,8 +9,6 @@ description: "Show services and the connections between them."
 
 Show services and the connections between them.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -52,8 +50,6 @@ Show services and the connections between them.
         bottom_gateway:T -- B:junctionRight
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

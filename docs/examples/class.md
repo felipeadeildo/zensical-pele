@@ -9,8 +9,6 @@ description: "Show classes, their members, and the relationships between them."
 
 Show classes, their members, and the relationships between them.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -68,8 +66,6 @@ Show classes, their members, and the relationships between them.
         Hotspot --> LavaFlow : feeds
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

@@ -9,8 +9,6 @@ description: "Show blocks in a grid that you arrange yourself."
 
 Show blocks in a grid that you arrange yourself.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -38,8 +36,6 @@ Show blocks in a grid that you arrange yourself.
       blockArrowId7<["Label"]>(x, down)
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

@@ -9,8 +9,6 @@ description: "Show the syntax of a grammar."
 
 Show the syntax of a grammar.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -38,8 +36,6 @@ Show the syntax of a grammar.
     digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

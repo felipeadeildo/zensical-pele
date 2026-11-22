@@ -9,8 +9,6 @@ description: "Show actors and the goals they reach with a system."
 
 Show actors and the goals they reach with a system.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -62,8 +60,6 @@ Show actors and the goals they reach with a system.
     Customer --> Browse
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

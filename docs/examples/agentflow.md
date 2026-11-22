@@ -9,8 +9,6 @@ description: "Show the tasks of AI agents and how work passes between them."
 
 Show the tasks of AI agents and how work passes between them.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -58,8 +56,6 @@ Show the tasks of AI agents and how work passes between them.
       enrich --> publish
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

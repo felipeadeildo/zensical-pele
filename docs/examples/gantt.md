@@ -9,8 +9,6 @@ description: "Show the tasks of a project on a timeline."
 
 Show the tasks of a project on a timeline.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -50,8 +48,6 @@ Show the tasks of a project on a timeline.
         5    : 0, 5
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

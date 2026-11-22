@@ -9,8 +9,6 @@ description: "Plot data as bars and lines on two axes."
 
 Plot data as bars and lines on two axes.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -34,8 +32,6 @@ Plot data as bars and lines on two axes.
         line [76.3, 75.9, 76.0, 76.7, 77.8, 78.9, 79.9, 80.7, 81.1, 80.5, 79.1, 77.4]
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

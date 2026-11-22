@@ -26,7 +26,7 @@ pytestmark = pytest.mark.browser
 
 ROOT = Path(__file__).resolve().parents[2]
 SITE_DIR = ROOT / "site"
-GALLERY_PAGES = sorted(
+EXAMPLE_PAGES = sorted(
     page.stem
     for page in (ROOT / "docs" / "examples").glob("*.md")
     if page.stem != "index"
@@ -90,8 +90,8 @@ def wait_for_diagrams(page: Page) -> list[str]:
     return [str(state) for state in states]
 
 
-@pytest.mark.parametrize("slug", GALLERY_PAGES)
-def test_gallery_page_mounts_every_diagram(page: Page, site_url: str, slug: str):
+@pytest.mark.parametrize("slug", EXAMPLE_PAGES)
+def test_example_page_mounts_every_diagram(page: Page, site_url: str, slug: str):
     page.goto(f"{site_url}examples/{slug}/")
     states = wait_for_diagrams(page)
     assert states
@@ -130,7 +130,7 @@ def test_color_scheme_switch_keeps_the_svg(page: Page, site_url: str):
 def test_page_without_diagrams_does_not_load_pele(page: Page, site_url: str):
     requests: list[str] = []
     page.on("request", lambda request: requests.append(request.url))
-    page.goto(f"{site_url}setup/fences/")
+    page.goto(f"{site_url}configuration/")
     page.wait_for_load_state("networkidle")
     assert not [url for url in requests if "pele" in url and "jsdelivr" in url]
 

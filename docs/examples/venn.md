@@ -9,8 +9,6 @@ description: "Show sets and where they overlap."
 
 Show sets and where they overlap.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -50,8 +48,6 @@ Show sets and where they overlap.
       union Desirable,Feasible,Viable["Ship it"]
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

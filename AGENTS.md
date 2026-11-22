@@ -26,11 +26,10 @@ that changes the page HTML.
 - Comments explain a reason the code can't show, in one short line. No section
   banners, separators or ASCII art.
 - Names say what a thing is or does: `FenceRegistration`, `render_page_assets`.
-- `docs/examples/` and the gallery entries of the `nav` in `zensical.toml` are
+- `docs/examples/` and the example entries of the `nav` in `zensical.toml` are
   generated. Change `scripts/sync_pele_examples.py` instead.
-- Docs follow the Zensical docs layout: tabs for Get started, Setup, Authoring,
-  Gallery and Internals, one subject per page, a Lucide `icon` in each page's
-  front matter. A new page goes in the `nav` and in the matching
-  `llmstxt.sections` entry of `zensical.toml`.
+- Docs follow the layout of https://pele.run: a flat sidebar, few pages, plain
+  Markdown with no cards or icons. A new page goes in the `nav` and in the
+  `llmstxt.sections` of `zensical.toml`.
 - Load the `technical-writing`, `writing-for-humans` and `unslop` skills before
   writing docs or the README.

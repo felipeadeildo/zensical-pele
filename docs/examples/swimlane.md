@@ -9,8 +9,6 @@ description: "Show a process divided by who performs each step."
 
 Show a process divided by who performs each step.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -64,8 +62,6 @@ Show a process divided by who performs each step.
       answer --> receive
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

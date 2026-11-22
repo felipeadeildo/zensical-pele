@@ -9,8 +9,6 @@ description: "Show events in chronological order."
 
 Show events in chronological order.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -40,8 +38,6 @@ Show events in chronological order.
             Hawaiʻi : Still growing, Mauna Kea, Kīlauea
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

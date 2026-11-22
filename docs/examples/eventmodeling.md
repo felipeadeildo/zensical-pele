@@ -9,8 +9,6 @@ description: "Show how commands, events, and views change a system over time."
 
 Show how commands, events, and views change a system over time.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -72,8 +70,6 @@ Show how commands, events, and views change a system over time.
     }
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

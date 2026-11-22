@@ -9,8 +9,6 @@ description: "Plot components by their visibility to the user and their stage of
 
 Plot components by their visibility to the user and their stage of evolution.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -62,8 +60,6 @@ Plot components by their visibility to the user and their stage of evolution.
     note "Standardizing power allows Kettles to evolve faster" [0.30, 0.49]
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

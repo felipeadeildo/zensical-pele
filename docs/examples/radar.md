@@ -9,8 +9,6 @@ description: "Compare values across several axes."
 
 Compare values across several axes.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -46,8 +44,6 @@ Compare values across several axes.
       max 5
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

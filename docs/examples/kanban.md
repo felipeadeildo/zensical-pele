@@ -9,8 +9,6 @@ description: "Show tasks in columns by status."
 
 Show tasks in columns by status.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -28,8 +26,6 @@ Show tasks in columns by status.
       id3[Update Database Function]@{ ticket: MC-2037, assigned: 'knsv', priority: 'High' }
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

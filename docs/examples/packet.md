@@ -9,8 +9,6 @@ description: "Show the fields of a network packet."
 
 Show the fields of a network packet.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -64,8 +62,6 @@ Show the fields of a network packet.
     192-255: "Data (variable length)"
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

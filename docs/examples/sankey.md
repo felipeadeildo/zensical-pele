@@ -9,8 +9,6 @@ description: "Show flows between nodes, with widths proportional to quantity."
 
 Show flows between nodes, with widths proportional to quantity.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -46,8 +44,6 @@ Show flows between nodes, with widths proportional to quantity.
     Electricity grid,Losses,56.691
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

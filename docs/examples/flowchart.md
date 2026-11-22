@@ -9,8 +9,6 @@ description: "Show the steps and decisions in a process."
 
 Show the steps and decisions in a process.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -54,8 +52,6 @@ Show the steps and decisions in a process.
         outside ---> top2
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

@@ -2,10 +2,10 @@
 
 zensical-pele renders the Mermaid diagrams of a [Zensical](https://zensical.org)
 or MkDocs site with [Pele](https://pele.run) instead of Mermaid.js. You keep
-writing ` ```mermaid ` blocks, and readers get diagrams in your theme colors
+writing `mermaid` code blocks, and readers get diagrams in your theme colors
 that adapt to small screens.
 
-Documentation and a gallery of every diagram type:
+Documentation and examples of every diagram type:
 https://felipeadeildo.github.io/zensical-pele/
 
 ## Usage
@@ -34,10 +34,8 @@ markdown_extensions:
   - pele
 ```
 
-The [Setup](https://felipeadeildo.github.io/zensical-pele/setup/) pages cover
-pinning the Pele version, serving Pele from your own site, colors, and
-[llms.txt](https://felipeadeildo.github.io/zensical-pele/setup/llms-txt/) with
-diagrams as `mermaid` blocks.
+[Configuration](https://felipeadeildo.github.io/zensical-pele/configuration/)
+covers pinning the Pele version and serving Pele from your own site.
 
 ## Development
 
@@ -58,8 +56,8 @@ uv run playwright install chromium
 uv run pytest -m browser
 ```
 
-The gallery in `docs/examples/` is generated from https://pele.run/examples.
-Regenerate it with:
+The examples in `docs/examples/` are generated from https://pele.run/examples.
+Regenerate them with:
 
 ```sh
 uv run scripts/sync_pele_examples.py
@@ -67,5 +65,5 @@ uv run scripts/sync_pele_examples.py
 
 ## License
 
-MIT. The gallery examples come from the Pele documentation, which is MIT
+MIT. The examples come from the Pele documentation, which is MIT
 licensed, and many of them from Mermaid, also MIT licensed.

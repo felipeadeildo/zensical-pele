@@ -9,8 +9,6 @@ description: "Show hierarchical data as nested rectangles, sized by value."
 
 Show hierarchical data as nested rectangles, sized by value.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -50,8 +48,6 @@ Show hierarchical data as nested rectangles, sized by value.
             "Events": 100000
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

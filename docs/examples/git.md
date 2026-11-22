@@ -9,8 +9,6 @@ description: "Show commits, branches, and merges."
 
 Show commits, branches, and merges.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -56,8 +54,6 @@ Show commits, branches, and merges.
             commit id:"C"
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

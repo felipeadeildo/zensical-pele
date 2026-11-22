@@ -9,8 +9,6 @@ description: "Show the states of a system and the transitions between them."
 
 Show the states of a system and the transitions between them.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -56,8 +54,6 @@ Show the states of a system and the transitions between them.
       Published --> [*]
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

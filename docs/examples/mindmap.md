@@ -9,8 +9,6 @@ description: "Show ideas branching out from a central topic."
 
 Show ideas branching out from a central topic.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -56,8 +54,6 @@ Show ideas branching out from a central topic.
           ʻUkulele
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

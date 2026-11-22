@@ -9,8 +9,6 @@ description: "Show a hierarchy, such as files and folders."
 
 Show a hierarchy, such as files and folders.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -60,8 +58,6 @@ Show a hierarchy, such as files and folders.
         README.md
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

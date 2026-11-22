@@ -9,8 +9,6 @@ description: "Show the messages that participants exchange over time."
 
 Show the messages that participants exchange over time.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -62,8 +60,6 @@ Show the messages that participants exchange over time.
       Note over Customer,Bank: One order, one transaction
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 

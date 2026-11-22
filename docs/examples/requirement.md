@@ -9,8 +9,6 @@ description: "Show requirements and how they relate to each other and to the ele
 
 Show requirements and how they relate to each other and to the elements that satisfy them.
 
-## Example 1
-
 === "Diagram"
 
     ```mermaid
@@ -70,8 +68,6 @@ Show requirements and how they relate to each other and to the elements that sat
       checkout_service - satisfies -> payment_req
     ```
     ````
-
-## Example 2
 
 === "Diagram"
 
