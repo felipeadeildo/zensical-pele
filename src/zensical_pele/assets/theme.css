@@ -1,0 +1,12 @@
+.pele-diagram {
+  --pele-bg: var(--md-default-bg-color);
+  --pele-fg: var(--md-default-fg-color);
+  --pele-muted: var(--md-default-fg-color--light);
+  --pele-line: var(--md-default-fg-color--light);
+  --pele-surface: var(--md-accent-fg-color--transparent);
+  --pele-surface-alt: var(--md-code-bg-color);
+  --pele-border: var(--md-accent-fg-color);
+  --pele-accent: var(--md-accent-fg-color);
+  --pele-font: var(--md-text-font-family), sans-serif;
+  --pele-font-mono: var(--md-code-font-family), monospace;
+}
