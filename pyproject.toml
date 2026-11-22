@@ -32,7 +32,7 @@ Repository = "https://github.com/felipeadeildo/zensical-pele"
 Issues = "https://github.com/felipeadeildo/zensical-pele/issues"
 
 [project.entry-points."markdown.extensions"]
-zensical_pele = "zensical_pele:PeleExtension"
+pele = "zensical_pele:PeleExtension"
 
 [build-system]
 requires = ["uv_build>=0.13.9,<0.14"]

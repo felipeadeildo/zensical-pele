@@ -14,7 +14,7 @@ flowchart LR
 """
 
 MERMAID_FENCE = {"name": "mermaid", "class": "mermaid", "format": fence_code_format}
-SUPERFENCES_FIRST = ("pymdownx.superfences", "zensical_pele")
+SUPERFENCES_FIRST = ("pymdownx.superfences", "pele")
 
 
 def render(
@@ -24,7 +24,7 @@ def render(
 ) -> str:
     configs: dict[str, dict[str, Any]] = {
         "pymdownx.superfences": {"custom_fences": [MERMAID_FENCE]},
-        "zensical_pele": settings,
+        "pele": settings,
     }
     return markdown.markdown(
         text, extensions=list(extensions), extension_configs=configs
@@ -121,3 +121,10 @@ def test_warns_without_superfences(caplog):
     html = markdown.markdown(FLOWCHART, extensions=["zensical_pele"])
     assert "data-pele-diagram" not in html
     assert "needs pymdownx.superfences" in caplog.text
+
+
+def test_module_path_loads_the_extension_too():
+    html = markdown.markdown(
+        FLOWCHART, extensions=["pymdownx.superfences", "zensical_pele"]
+    )
+    assert "data-pele-diagram" in html

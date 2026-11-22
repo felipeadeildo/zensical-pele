@@ -4,10 +4,10 @@ import markdown
 
 html = markdown.markdown(
     "```mermaid\nflowchart LR\n  A --> B\n```\n",
-    extensions=["pymdownx.superfences", "zensical_pele"],
+    extensions=["pymdownx.superfences", "pele"],
 )
 
 if "data-pele-diagram" not in html or "<script" not in html:
-    message = f"zensical_pele did not render the diagram:\n{html}"
+    message = f"the pele extension did not render the diagram:\n{html}"
     raise SystemExit(message)
-print("zensical_pele renders diagrams")
+print("the pele extension renders diagrams")
