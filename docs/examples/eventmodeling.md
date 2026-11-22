@@ -9,7 +9,7 @@ description: "Show how commands, events, and views change a system over time."
 
 Show how commands, events, and views change a system over time.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     eventmodeling
@@ -71,7 +71,7 @@ Show how commands, events, and views change a system over time.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     eventmodeling

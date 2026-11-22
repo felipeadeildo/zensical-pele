@@ -9,7 +9,7 @@ description: "Show events in chronological order."
 
 Show events in chronological order.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     timeline
@@ -39,7 +39,7 @@ Show events in chronological order.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     timeline

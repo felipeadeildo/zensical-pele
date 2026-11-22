@@ -9,7 +9,7 @@ description: "Show the messages that participants exchange over time."
 
 Show the messages that participants exchange over time.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---
@@ -61,7 +61,7 @@ Show the messages that participants exchange over time.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     sequenceDiagram

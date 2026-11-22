@@ -9,7 +9,7 @@ description: "Show commits, branches, and merges."
 
 Show commits, branches, and merges.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
         gitGraph
@@ -55,7 +55,7 @@ Show commits, branches, and merges.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---

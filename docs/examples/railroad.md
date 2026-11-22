@@ -9,7 +9,7 @@ description: "Show the syntax of a grammar."
 
 Show the syntax of a grammar.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     railroad-ebnf-beta
@@ -37,7 +37,7 @@ Show the syntax of a grammar.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     railroad-beta

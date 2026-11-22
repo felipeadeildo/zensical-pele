@@ -9,7 +9,7 @@ description: "Show classes, their members, and the relationships between them."
 
 Show classes, their members, and the relationships between them.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---
@@ -67,7 +67,7 @@ Show classes, their members, and the relationships between them.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---

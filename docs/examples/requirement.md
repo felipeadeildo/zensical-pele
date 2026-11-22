@@ -9,7 +9,7 @@ description: "Show requirements and how they relate to each other and to the ele
 
 Show requirements and how they relate to each other and to the elements that satisfy them.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---
@@ -69,7 +69,7 @@ Show requirements and how they relate to each other and to the elements that sat
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     requirementDiagram

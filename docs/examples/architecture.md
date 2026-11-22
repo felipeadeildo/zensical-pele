@@ -9,7 +9,7 @@ description: "Show services and the connections between them."
 
 Show services and the connections between them.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     architecture-beta
@@ -51,7 +51,7 @@ Show services and the connections between them.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     architecture-beta

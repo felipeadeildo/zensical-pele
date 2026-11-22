@@ -9,7 +9,7 @@ description: "Show ideas branching out from a central topic."
 
 Show ideas branching out from a central topic.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     mindmap
@@ -55,7 +55,7 @@ Show ideas branching out from a central topic.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     mindmap

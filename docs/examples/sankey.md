@@ -9,7 +9,7 @@ description: "Show flows between nodes, with widths proportional to quantity."
 
 Show flows between nodes, with widths proportional to quantity.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---
@@ -45,7 +45,7 @@ Show flows between nodes, with widths proportional to quantity.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     sankey

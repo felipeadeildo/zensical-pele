@@ -9,7 +9,7 @@ description: "Show the causes that contribute to a problem."
 
 Show the causes that contribute to a problem.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ishikawa-beta

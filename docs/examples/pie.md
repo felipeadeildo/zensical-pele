@@ -9,7 +9,7 @@ description: "Show the parts of a whole."
 
 Show the parts of a whole.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     pie title Fish caught by the crew

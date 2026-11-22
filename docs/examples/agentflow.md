@@ -9,7 +9,7 @@ description: "Show the tasks of AI agents and how work passes between them."
 
 Show the tasks of AI agents and how work passes between them.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     agentflow-beta TB
@@ -57,7 +57,7 @@ Show the tasks of AI agents and how work passes between them.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     agentflow-beta TB

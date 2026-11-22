@@ -9,7 +9,7 @@ description: "Show blocks in a grid that you arrange yourself."
 
 Show blocks in a grid that you arrange yourself.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     block
@@ -37,7 +37,7 @@ Show blocks in a grid that you arrange yourself.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     block

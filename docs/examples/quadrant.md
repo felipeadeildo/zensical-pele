@@ -9,7 +9,7 @@ description: "Plot items on two axes that divide the chart into four sections."
 
 Plot items on two axes that divide the chart into four sections.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     quadrantChart

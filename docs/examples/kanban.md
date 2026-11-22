@@ -9,7 +9,7 @@ description: "Show tasks in columns by status."
 
 Show tasks in columns by status.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     kanban
@@ -27,7 +27,7 @@ Show tasks in columns by status.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---

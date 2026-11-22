@@ -9,7 +9,7 @@ description: "Show actors and the goals they reach with a system."
 
 Show actors and the goals they reach with a system.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---
@@ -61,7 +61,7 @@ Show actors and the goals they reach with a system.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---

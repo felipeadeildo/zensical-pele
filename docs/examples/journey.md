@@ -9,7 +9,7 @@ description: "Show the steps of a task and how satisfying each one is."
 
 Show the steps of a task and how satisfying each one is.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     journey

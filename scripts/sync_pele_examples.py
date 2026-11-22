@@ -108,8 +108,9 @@ def render_diagram_page(diagram_type: DiagramType) -> str:
     ]
     for source in diagram_type.sources:
         diagram = f"```mermaid\n{source}```"
+        # "===!" starts a new tab set, so back-to-back examples don't merge.
         lines += [
-            '=== "Diagram"',
+            '===! "Diagram"',
             "",
             textwrap.indent(diagram, "    "),
             "",

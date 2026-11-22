@@ -9,7 +9,7 @@ description: "Show the steps and decisions in a process."
 
 Show the steps and decisions in a process.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     flowchart LR
@@ -53,7 +53,7 @@ Show the steps and decisions in a process.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---

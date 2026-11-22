@@ -9,7 +9,7 @@ description: "Show the tasks of a project on a timeline."
 
 Show the tasks of a project on a timeline.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     gantt
@@ -49,7 +49,7 @@ Show the tasks of a project on a timeline.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     gantt

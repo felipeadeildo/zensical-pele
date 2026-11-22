@@ -9,7 +9,7 @@ description: "Plot components by their visibility to the user and their stage of
 
 Plot components by their visibility to the user and their stage of evolution.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     wardley-beta
@@ -61,7 +61,7 @@ Plot components by their visibility to the user and their stage of evolution.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     wardley-beta

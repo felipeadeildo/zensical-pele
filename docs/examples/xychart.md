@@ -9,7 +9,7 @@ description: "Plot data as bars and lines on two axes."
 
 Plot data as bars and lines on two axes.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     xychart
@@ -33,7 +33,7 @@ Plot data as bars and lines on two axes.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---

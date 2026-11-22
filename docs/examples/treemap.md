@@ -9,7 +9,7 @@ description: "Show hierarchical data as nested rectangles, sized by value."
 
 Show hierarchical data as nested rectangles, sized by value.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---
@@ -49,7 +49,7 @@ Show hierarchical data as nested rectangles, sized by value.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     treemap-beta

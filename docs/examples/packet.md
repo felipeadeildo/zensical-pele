@@ -9,7 +9,7 @@ description: "Show the fields of a network packet."
 
 Show the fields of a network packet.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---
@@ -63,7 +63,7 @@ Show the fields of a network packet.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---

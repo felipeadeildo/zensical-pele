@@ -9,7 +9,7 @@ description: "Compare values across several axes."
 
 Compare values across several axes.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     radar-beta
@@ -45,7 +45,7 @@ Compare values across several axes.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---

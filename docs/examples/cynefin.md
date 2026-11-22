@@ -9,7 +9,7 @@ description: "Sort items into the five domains of the Cynefin framework."
 
 Sort items into the five domains of the Cynefin framework.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     cynefin-beta

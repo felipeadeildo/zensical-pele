@@ -9,7 +9,7 @@ description: "Show a process divided by who performs each step."
 
 Show a process divided by who performs each step.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     swimlane-beta LR
@@ -63,7 +63,7 @@ Show a process divided by who performs each step.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     swimlane-beta LR

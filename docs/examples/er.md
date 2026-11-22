@@ -9,7 +9,7 @@ description: "Show entities, their attributes, and the relationships between the
 
 Show entities, their attributes, and the relationships between them.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     erDiagram
@@ -61,7 +61,7 @@ Show entities, their attributes, and the relationships between them.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     erDiagram

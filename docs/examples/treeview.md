@@ -9,7 +9,7 @@ description: "Show a hierarchy, such as files and folders."
 
 Show a hierarchy, such as files and folders.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---
@@ -59,7 +59,7 @@ Show a hierarchy, such as files and folders.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     treeView-beta

@@ -163,3 +163,15 @@ def test_unreachable_pele_leaves_the_source_as_a_code_block(page: Page, site_url
     source = page.text_content("[data-pele-diagram] code.language-mermaid")
     assert source is not None
     assert source.startswith("flowchart LR")
+
+
+@pytest.mark.parametrize("slug", EXAMPLE_PAGES)
+def test_example_page_has_one_tab_set_per_example(page: Page, site_url: str, slug: str):
+    page.goto(f"{site_url}examples/{slug}/")
+    tab_counts = page.eval_on_selector_all(
+        ".md-content .tabbed-set",
+        """(sets) => sets.map(
+          (set) => set.querySelectorAll(".tabbed-labels > label").length)""",
+    )
+    assert tab_counts
+    assert all(count == 2 for count in tab_counts), tab_counts

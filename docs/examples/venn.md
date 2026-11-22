@@ -9,7 +9,7 @@ description: "Show sets and where they overlap."
 
 Show sets and where they overlap.
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     ---
@@ -49,7 +49,7 @@ Show sets and where they overlap.
     ```
     ````
 
-=== "Diagram"
+===! "Diagram"
 
     ```mermaid
     venn-beta
