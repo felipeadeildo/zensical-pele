@@ -1,0 +1,116 @@
+[project]
+name = "zensical-pele"
+version = "0.1.0"
+description = "Render Mermaid diagrams with Pele in Zensical and MkDocs: smaller, faster and themed with CSS variables."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Felipe Adeildo" }]
+requires-python = ">=3.11"
+dependencies = [
+  "markdown>=3.4",
+  "pymdown-extensions>=10.0",
+  "typing-extensions>=4.4; python_version < '3.12'",
+]
+keywords = ["zensical", "mkdocs", "mermaid", "pele", "diagrams", "markdown"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Framework :: MkDocs",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Documentation",
+  "Topic :: Text Processing :: Markup :: Markdown",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://felipeadeildo.github.io/zensical-pele/"
+Documentation = "https://felipeadeildo.github.io/zensical-pele/"
+Repository = "https://github.com/felipeadeildo/zensical-pele"
+Issues = "https://github.com/felipeadeildo/zensical-pele/issues"
+
+[project.entry-points."markdown.extensions"]
+zensical_pele = "zensical_pele:PeleExtension"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+  { include-group = "test" },
+  { include-group = "lint" },
+  { include-group = "docs" },
+]
+test = ["pytest>=8"]
+browser = [
+    "playwright>=1.50",
+    "pytest>=8",
+    "zensical>=0.1",
+]
+lint = ["ruff>=0.14", "ty>=0.0.1a20", "types-markdown"]
+docs = ["zensical>=0.1"]
+
+[tool.uv]
+default-groups = ["dev"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-ra", "--strict-markers", "-m", "not browser"]
+markers = ["browser: builds the docs and renders them in Chromium (needs Playwright)"]
+xfail_strict = true
+
+[tool.ruff]
+line-length = 88
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = [
+  "A",    # flake8-builtins
+  "ANN",  # flake8-annotations
+  "B",    # flake8-bugbear
+  "C4",   # flake8-comprehensions
+  "D",    # pydocstyle
+  "E",    # pycodestyle errors
+  "EM",   # flake8-errmsg
+  "F",    # pyflakes
+  "FBT",  # flake8-boolean-trap
+  "I",    # isort
+  "N",    # pep8-naming
+  "PERF", # perflint
+  "PIE",  # flake8-pie
+  "PL",   # pylint
+  "PT",   # flake8-pytest-style
+  "PTH",  # flake8-use-pathlib
+  "RET",  # flake8-return
+  "RUF",  # ruff-specific rules
+  "S",    # flake8-bandit
+  "SIM",  # flake8-simplify
+  "T20",  # flake8-print
+  "TC",   # flake8-type-checking
+  "UP",   # pyupgrade
+  "W",    # pycodestyle warnings
+]
+ignore = [
+  "ANN401", # Python Markdown hands untyped values to extensions
+  "D105",   # magic methods are self-explanatory
+  "D107",   # __init__ is documented on the class
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D", "S101", "PLR2004", "ANN"]
+"scripts/**" = ["T20", "S310"]
+
+[tool.ty.environment]
+python-version = "3.11"
+
+[tool.ty.rules]
+missing-override-decorator = "error"
